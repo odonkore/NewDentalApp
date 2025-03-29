@@ -1,0 +1,22 @@
+# Flutter & Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.idea/
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+macos/Flutter/GeneratedPluginRegistrant.swift
+*.iml
+
+# VS Code
+.vscode/
+
+# Other
+*.lock
+*.log
