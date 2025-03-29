@@ -15,7 +15,6 @@ The app is purposely designed to reduce the stress of having to travel long dist
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Dart Documentation](https://dart.dev/docs)
 * [Flutter.dev](https://flutter.dev/)
 * [Flutter on Github](https://github.com/flutter/flutter)
