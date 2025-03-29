@@ -23,7 +23,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  /// Handles creating a new account using Firebase Authentication and saving user data in Firestore.
+  // Handles creating a new account using Firebase Authentication and saving user data in Firestore.
   Future<void> _createAccount() async {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
@@ -44,10 +44,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
           'createdAt': Timestamp.now(),
         });
 
-        // Ensure widget is still mounted before using context
+        // this ensure widget is still mounted before using context
         if (!mounted) return;
 
-        // Show success message and navigate to home
+        // this is to show success message and navigate to home
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text("Account created successfully")),
         );
@@ -109,11 +109,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              // Google Auth Button (for example)
+              // Google Auth Button
               OutlinedButton.icon(
                 onPressed: () async {
-                  // This part calls your AuthService for Google Sign-In
-                  // (Assuming you've set it up in another file)
+                  // This part calls the AuthService for Google Sign-In
                   final authService = AuthService();
                   await authService.signInWithGoogle();
                 },
@@ -135,12 +134,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   const Text("Already have an account? "),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pop(context); // Or push to Login screen
+                      Navigator.pop(context);
                     },
                     child: const Text(
                       "Login",
                       style: TextStyle(
-                        color: Color(0xFF3498DB), // Sky blue
+                        color: Color(0xFF3498DB),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
