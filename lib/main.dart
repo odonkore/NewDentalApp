@@ -98,7 +98,7 @@ class WelcomeScreen extends StatelessWidget {
                   },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
-                      foregroundColor: Colors.white, // Makes the text white and visible
+                      foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                     ),
                   child: const Text(
@@ -107,7 +107,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
 
-            
+            // Already have account? Login here
                 TextButton(
                   onPressed: () {},
                   child: const Text("Already have an account? Log in"),
