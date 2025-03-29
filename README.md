@@ -8,10 +8,10 @@ The app is purposely designed to reduce the stress of having to travel long dist
 
 
 # Development Environment
-Visual Studio Code
-Flutter
+- Visual Studio Code
+- Flutter
 
-Dart
+- Dart
 
 # Useful Websites
 
